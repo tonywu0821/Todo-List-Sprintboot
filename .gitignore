@@ -3,6 +3,11 @@
 # Learn more about .gitignore:
 #     https://www.atlassian.com/git/tutorials/saving-changes/gitignore
 
+#client
+/client/node_modules
+/client/build
+/client/coverage
+
 # Node artifact files
 node_modules/
 dist/
