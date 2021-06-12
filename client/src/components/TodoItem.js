@@ -7,7 +7,12 @@ const TodoItem = ({todo, updateTodo, deleteTodo}) => {
     <div 
       className={todo.done ? "complete": "todo-row"} 
     >
-      <div className={todo.done ? "complete-text": "" } onClick={() => updateTodo(todo.id, todo.content, !todo.done) }>
+      <div 
+        className={todo.done ? "complete-text": "" } 
+        onClick={() => 
+          updateTodo(todo.id, todo.content, !todo.done) 
+        }
+      >
         {todo.content}
       </div>
       <div>

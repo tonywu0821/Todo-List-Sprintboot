@@ -1,13 +1,11 @@
 package com.example.todosprintboot.contorller;
 
-
 import com.example.todosprintboot.model.TodoItem;
 import com.example.todosprintboot.service.TodoService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-
 import java.util.List;
 
 @RestController
@@ -38,7 +36,8 @@ public class TodoController {
     }
 
     @PutMapping("{id}")
-    public ResponseEntity<TodoItem> updateProduct(@PathVariable long id, @RequestBody TodoItem todoItem){
+    public ResponseEntity<TodoItem> updateProduct(@PathVariable long id,
+                                                  @RequestBody TodoItem todoItem){
         todoItem.setId(id);
         return ResponseEntity.ok().body(todoService.updateTodoItem(todoItem));
     }

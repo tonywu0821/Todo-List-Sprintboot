@@ -1,8 +1,6 @@
 package com.example.todosprintboot.model;
 
-
 import javax.persistence.*;
-
 
 @Entity
 @Table

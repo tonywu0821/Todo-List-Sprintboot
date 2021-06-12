@@ -1,12 +1,10 @@
 package com.example.todosprintboot.service;
 
-
 import com.example.todosprintboot.exception.ResourceNotFoundException;
 import com.example.todosprintboot.model.TodoItem;
 import com.example.todosprintboot.repository.TodoRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
 import javax.transaction.Transactional;
 import java.util.List;
 import java.util.Optional;
