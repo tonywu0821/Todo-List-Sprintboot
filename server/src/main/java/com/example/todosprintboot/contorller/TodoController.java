@@ -12,7 +12,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping(value = "/todo")
-@CrossOrigin("http:localhost:3000")
+@CrossOrigin("http://localhost:3000")
 public class TodoController {
 
     private final TodoService todoService;
@@ -25,8 +25,6 @@ public class TodoController {
     @GetMapping
     public ResponseEntity<List<TodoItem>> getTodoItems() {
         return ResponseEntity.ok().body(todoService.getTodoItems());
-        //= ResponseEntity.ok(todoService.getTodoItems())
-        //= ResponseEntity.status(HttpStatus.OK).body(todoItems)
     }
 
     @GetMapping("{id}")
@@ -35,13 +33,12 @@ public class TodoController {
     }
 
     @PostMapping
-    public void createTodoItem(@RequestBody TodoItem todoItem) {
-        todoService.createTodoItem(todoItem);
+    public TodoItem createTodoItem(@RequestBody TodoItem todoItem){
+        return todoService.createTodoItem(todoItem);
     }
 
     @PutMapping("{id}")
-    public ResponseEntity<TodoItem> updateProduct(@PathVariable long id,
-                                                  @RequestBody TodoItem todoItem) {
+    public ResponseEntity<TodoItem> updateProduct(@PathVariable long id, @RequestBody TodoItem todoItem){
         todoItem.setId(id);
         return ResponseEntity.ok().body(todoService.updateTodoItem(todoItem));
     }
@@ -51,5 +48,7 @@ public class TodoController {
         todoService.deleteTodoItem(id);
         return HttpStatus.OK;
     }
+
+
 
 }
