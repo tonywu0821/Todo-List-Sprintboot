@@ -20,14 +20,18 @@ Backend
 ![](demo/4.png)
 * **User can mark an item as completed by clicking the text** 
 ![](demo/2.png)
-* **User can add an item from the list** 
+
+* **User can add an item from the list by clicking the Add Todo Button** 
 ![](demo/5.png)
 ![](demo/6.png)
-* **User edit add an item from the list** 
+* **User edit add an item from the list by clicking the edit button** 
 ![](demo/7.png)
 ![](demo/8.png)
-* **User edit delete an item from the list** 
-![](demo/delete.png)
+* **User edit delete an item from the list by clicking the delete button** 
+![](demo/11.png)
+
+* **This program can prevent users from creating an empty todoItem**
+![](demo/10.png)
 
 ## Try it locally
 * **Frontend part** 
