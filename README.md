@@ -46,11 +46,16 @@ $ npm start
 
 * **Backend part** 
 1. Go to server folder
-2. Run the following command
+2. Run the following command to run the server.
 ```
 $ java -jar todo-sprintboot-0.0.1-SNAPSHOT.jar
 ```
-
+or you can use the following commands to package and run the server
+```
+$ mvn install
+$ cd target
+$ java -jar todo-sprintboot-0.0.1-SNAPSHOT.jar
+```
 
 
 ## Directory Structure
