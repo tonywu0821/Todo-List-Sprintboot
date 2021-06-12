@@ -35,14 +35,6 @@ h1 {
   font-size: 24px;
 }
 
-.complete {
-  opacity: 0.4;
-}
-
-.complete-text{
-  text-decoration: line-through;
-}
-
 .todo-top {
   height: 60px;
   margin-top: 5px;;
@@ -56,7 +48,7 @@ h1 {
 
 .todo-select {
   height: 100%;
-  border: 2px solid #5d0cff;
+  border: 2px solid rgba(4, 124, 78, 0.712);
   border-radius: 4px 0 0 4px;
   background: transparent;
   color: #fff;
@@ -75,7 +67,7 @@ h1 {
   height: 100%;
   padding-left: 4px;
   border-radius: 4px 0 0 4px;
-  border: 2px solid #5d0cff;
+  border: 2px solid rgba(4, 124, 78, 0.712);
   outline: none;
   width: 320px;
   background: transparent;
@@ -95,11 +87,31 @@ h1 {
   outline: none;
   background: linear-gradient(
     90deg,
-    rgba(93, 12, 255, 1) 0%,
-    rgba(155, 0, 250, 1) 100%
+    rgba(4, 124, 78, 0.712) 0%,
+    rgb(1, 187, 48) 100%
   );
   color: #fff;
   text-transform: capitalize;
+}
+
+.complete-text{
+  text-decoration: line-through;
+}
+
+.complete {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 4px auto;
+  color: #fff;
+  background: linear-gradient(
+    90deg,
+    rgb(36, 36, 36) 0%,
+    rgb(46, 46, 46) 100%
+  );
+  padding: 16px;
+  border-radius: 5px;
+  width: 90%;
 }
 
 .todo-row {
@@ -142,4 +154,6 @@ h1 {
     rgba(17, 122, 255, 1) 100%
   );
 }
+
+
 
