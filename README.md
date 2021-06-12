@@ -24,7 +24,7 @@ Backend
 * **User can add an item from the list by clicking the Add Todo Button** 
 ![](demo/5.png)
 ![](demo/6.png)
-* **User can add an item from the list by clicking the edit button** 
+* **User can edit an item from the list by clicking the edit button** 
 ![](demo/7.png)
 ![](demo/8.png)
 * **User can delete an item from the list by clicking the delete button** 
