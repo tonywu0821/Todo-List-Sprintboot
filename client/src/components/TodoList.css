@@ -11,7 +11,7 @@
 
 .todo-select {
   height: 100%;
-  border: 2px solid #5d0cff;
+  border: 2px solid rgba(4, 124, 78, 0.712);
   border-radius: 4px 0 0 4px;
   background: transparent;
   color: #fff;
