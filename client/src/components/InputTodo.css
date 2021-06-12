@@ -1,0 +1,39 @@
+.todo-form {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+  margin-right: 5px;
+}
+
+.todo-input {
+  height: 100%;
+  padding-left: 4px;
+  border-radius: 4px 0 0 4px;
+  border: 2px solid rgba(4, 124, 78, 0.712);
+  outline: none;
+  width: 320px;
+  background: transparent;
+  color: #fff;
+}
+
+.todo-input::placeholder {
+  color: #bdafaf;
+}
+
+.todo-button {
+  height: 100%;
+  border: none;
+  padding: 0 5px 0 5px;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+  outline: none;
+  background: linear-gradient(
+    90deg,
+    rgba(4, 124, 78, 0.712) 0%,
+    rgb(1, 187, 48) 100%
+  );
+  color: #fff;
+  text-transform: capitalize;
+}

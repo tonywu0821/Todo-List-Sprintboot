@@ -1,0 +1,18 @@
+.todo-top {
+  height: 60px;
+  margin-top: 5px;;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+  margin-bottom: 20px;
+}
+
+.todo-select {
+  height: 100%;
+  border: 2px solid #5d0cff;
+  border-radius: 4px 0 0 4px;
+  background: transparent;
+  color: #fff;
+}

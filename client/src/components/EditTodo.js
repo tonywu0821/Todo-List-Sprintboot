@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-
+import './InputTodo.css';
 
 const EditTodo = ({ todo , updateTodo}) => {
   const [content, setContent] = useState(todo.content);
@@ -13,6 +13,7 @@ const EditTodo = ({ todo , updateTodo}) => {
     }
     updateTodo(todo.id, content, todo.done)
   }
+  
   return (
     <>
       <button

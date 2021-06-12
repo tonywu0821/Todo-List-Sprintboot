@@ -1,4 +1,3 @@
-import './App.css';
 import { ToastContainer} from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import TodoList from './components/TodoList';
@@ -18,7 +17,7 @@ function App() {
           pauseOnFocusLoss
           draggable
           pauseOnHover
-        />
+      />
     </div>
   );
 }

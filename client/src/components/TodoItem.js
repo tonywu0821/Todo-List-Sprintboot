@@ -1,5 +1,6 @@
 import React from 'react';
 import EditTodo from "./EditTodo";
+import './TodoItem.css';
 
 const TodoItem = ({todo, updateTodo, deleteTodo}) => {  
   return ( 

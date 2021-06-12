@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import InputTodo from "./InputTodo";
-
+import './TodoList.css';
 import TodoItem from './TodoItem'
 
 const TodoList = () => {
@@ -49,13 +49,11 @@ const TodoList = () => {
       //console.log("response",jsonData);
       let updatedTodos = todos.map(todo => {
         if (todo.id === id) {
-          todo.content = content;
-          todo.done = done;
+          return {id, content, done}
         }
         return todo;
       });
       setTodos(updatedTodos);
-
     } catch (err) {
       console.error(err.message);
     }
@@ -92,7 +90,11 @@ const TodoList = () => {
     <>
       <div className="todo-top">
         <InputTodo addTodo={addTodo}/>
-        <select className="todo-select" value={filter} onChange={(e) => setFilter(e.target.value)}>
+        <select 
+          className="todo-select" 
+          value={filter} 
+          onChange={(e) => setFilter(e.target.value)}
+        >
           <option value="">ALL</option>
           <option value="completed">Compeleted</option>
           <option value="uncompeleted">Uncompeleted</option>
@@ -100,7 +102,12 @@ const TodoList = () => {
       </div>
       
       {filterTodos().map((todo) =>
-        <TodoItem key={todo.id} todo={todo} updateTodo = {updateTodo} deleteTodo={deleteTodo}/>
+        <TodoItem 
+          key={todo.id} 
+          todo={todo} 
+          updateTodo = {updateTodo} 
+          deleteTodo={deleteTodo}
+        />
       )}
     </>
   )

@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import './InputTodo.css';
 
 const InputTodo = ({ addTodo }) => {
   const [content, setCotent] = useState("");
