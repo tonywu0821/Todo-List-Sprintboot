@@ -1,9 +1,24 @@
 import './App.css';
+import { ToastContainer} from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import TodoList from './components/TodoList';
 
 function App() {
   return (
-    <div className="App">
-      Hello!
+    <div className="todo-app">
+      <h2>My Todo List</h2>
+      <TodoList/>
+      <ToastContainer
+          position="bottom-right"
+          autoClose={5000}
+          hideProgressBar={false}
+          newestOnTop={false}
+          closeOnClick
+          rtl={false}
+          pauseOnFocusLoss
+          draggable
+          pauseOnHover
+        />
     </div>
   );
 }

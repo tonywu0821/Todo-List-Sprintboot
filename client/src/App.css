@@ -1,0 +1,145 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
+}
+
+body {
+  background: linear-gradient(
+    90deg,
+    rgb(16, 112, 255) 0%,
+    rgba(100, 115, 255, 1) 100%
+  );
+}
+
+.todo-app {
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  width: 600px;
+  min-height: 600px;
+  background: #161a2b;
+  color:#fff;
+  text-align: center;
+  margin: 128px auto;
+  border-radius: 10px;
+  padding-bottom: 32px;
+}
+
+h1 {
+  margin: 32px 0;
+  color: #fff;
+  font-size: 24px;
+}
+
+.complete {
+  opacity: 0.4;
+}
+
+.complete-text{
+  text-decoration: line-through;
+}
+
+.todo-top {
+  height: 60px;
+  margin-top: 5px;;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+  margin-bottom: 20px;
+}
+
+.todo-select {
+  height: 100%;
+  border: 2px solid #5d0cff;
+  border-radius: 4px 0 0 4px;
+  background: transparent;
+  color: #fff;
+}
+
+.todo-form {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+  margin-right: 5px;
+}
+
+.todo-input {
+  height: 100%;
+  padding-left: 4px;
+  border-radius: 4px 0 0 4px;
+  border: 2px solid #5d0cff;
+  outline: none;
+  width: 320px;
+  background: transparent;
+  color: #fff;
+}
+
+.todo-input::placeholder {
+  color: #bdafaf;
+}
+
+.todo-button {
+  height: 100%;
+  border: none;
+  padding: 0 5px 0 5px;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+  outline: none;
+  background: linear-gradient(
+    90deg,
+    rgba(93, 12, 255, 1) 0%,
+    rgba(155, 0, 250, 1) 100%
+  );
+  color: #fff;
+  text-transform: capitalize;
+}
+
+.todo-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 4px auto;
+  color: #fff;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 118, 20, 1) 0%,
+    rgba(255, 84, 17, 1) 100%
+  );
+
+  padding: 16px;
+  border-radius: 5px;
+  width: 90%;
+}
+
+.todo-row:nth-child(4n + 1) {
+  background: linear-gradient(
+    90deg,
+    rgba(93, 12, 255, 1) 0%,
+    rgba(155, 0, 250, 1) 100%
+  );
+}
+
+.todo-row:nth-child(4n + 2) {
+  background: linear-gradient(
+    90deg,
+    rgba(255, 12, 241, 1) 0%,
+    rgba(250, 0, 135, 1) 100%
+  );
+}
+
+.todo-row:nth-child(4n + 3) {
+  background: linear-gradient(
+    90deg,
+    rgba(20, 159, 255, 1) 0%,
+    rgba(17, 122, 255, 1) 100%
+  );
+}
+
